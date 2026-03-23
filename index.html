@@ -82,7 +82,7 @@
     vertical-align: top;
     width: 50%;
   }
-  .work-columns .work-col:first-child { padding-right: 12px; }
+  .work-columns .work-col:first-child { padding-right: 12px; padding-top: 2px; }
   .work-columns .work-col:last-child { padding-left: 12px; }
 
   /* ── SECTION HEADINGS ── */
@@ -124,8 +124,8 @@
 
   .job { margin-bottom: 12px; }
   .job-company { font-weight: 700; font-size: 9.5pt; line-height: 1.3; }
-  .job-role { font-size: 9pt; color: var(--text); }
-  .job-meta { font-style: italic; font-size: 8.5pt; color: var(--muted); margin-bottom: 3px; }
+  .job-role { font-size: 9.5pt; color: var(--text); }
+  .job-meta { font-style: italic; font-size: 8.5pt; color: var(--muted); margin-bottom: 6px; }
 
   /* ── FOOTER ── */
   .footer {
@@ -137,6 +137,16 @@
     font-size: 7.5pt;
     color: var(--muted);
     font-family: var(--font-body);
+  }
+
+  .work-columns .work-col > .job:first-child {
+    margin-top: 0;
+  }
+  .work-columns .work-col > .job:first-child .job-role,
+  .work-columns .work-col > .job:first-child .job-company,
+  .work-columns .work-col > .job:first-child .job-meta {
+    margin-top: 0;
+    padding-top: 0;
   }
 
   @media print {
@@ -228,10 +238,10 @@
         <div class="job">
           <div class="job-role">Senior Transportation Planner / Modeler</div>
           <div class="job-company">Traffic &amp; Mobility Consultants</div>
-          <div class="job-meta">February 2025 – Present</div>
+          <div class="job-meta">February 2025 – Present / Orlando, FL</div>
           <ul>
             <li>Recognized as the organization's Principal Travel Demand Modeler, providing technical leadership and oversight in the application of SERPM, TCRPM, CFRPM, TBRPM, D1RPM, and NERPM to support corridor studies, DRI analyses, traffic impact studies, and other transportation planning initiatives.</li>
-            <li>Developed and delivered an internal training curriculum for senior and junior staff on travel demand modeling and trip-based model applications, strengthening in-house technical expertise, promoting consistent modeling practices, and enhancing overall project delivery</li>
+            <li>Developed and delivered an internal training curriculum for senior and junior staff on travel demand modeling and trip-based model applications, strengthening in-house technical expertise, promoting consistent modeling practices, and enhancing overall project delivery.</li>
             <li>Led QA/QC and technical review for the NOWOCATS 2025 CFRPM subarea model, including evaluation of socioeconomic data, network coding, model inputs, and forecast reasonableness. Developed recommendations for model refinements to enhance performance and support accurate, reliable future traffic forecasting.</li>
             <li>Updated CFRPM 2025 model scenario through socioeconomic and network input revisions, coded 100+ traffic counts, supported calibration and validation using an improved RMSE-based process, and forecasted traffic volumes for the Norfolk alternative corridor evaluation study.</li>
             <li>Served as the in-house GIS lead for context classification analyses and CMS updates for the City of Apopka, providing technical support in client coordination, project status reporting, and the communication of methodologies and findings. Conducted signal warrant, traffic impact, traffic facilities, and traffic operations studies throughout the Central Florida region.</li>
@@ -241,10 +251,9 @@
         <div class="job">
           <div class="job-role">Transportation Planner 4</div>
           <div class="job-company">HNTB</div>
-          <div class="job-meta">October 2024 – February 2025</div>
+          <div class="job-meta">October 2024 – February 2025 / Fort Lauderdale, FL</div>
           <ul>
             <li>Supported NEPA environmental studies through preparation of technical memoranda, including MOVES air quality emissions methodology, land use and community facilities, and environmental justice documentation.</li>
-            <li>Contributed to the Mississippi Department of Transportation funding and financing plan by identifying potential revenue sources and assisting with long-range revenue forecasting.</li>
             <li>Prepared origin-destination delta maps from the GNRC travel demand model for the I-24 Choice Lanes Study and supported junior staff in developing internal dashboards and performance measure tools for TDOT-related projects.</li>
           </ul>
         </div>
@@ -261,9 +270,8 @@
             <li>Principal Transportation Planner for the "Pathways to the Future" project, overseeing the development and refinement of a comprehensive suite of scenario planning models, including those for travel demand, land-use/socio-economic, air quality, and accessibility.</li>
             <li>Developed post-processing tools for LRTP updates, covering alternatives performance measurement, and updated network with 180+ projects for PlanRVA.</li>
             <li>Forecasted traffic volumes, and performed various alternative analysis, lane capacity analysis to evaluate upgrades and updates to roadway systems using TCRPM v5, SERPM v8 and NERPM v2.1 Activity-based travel demand models.</li>
-            <li>Developed new TAZ geography, disaggregated socio-economic data using ACS-2021 estimates, updated traffic counts and transit lines for TCRPM v6. Expanded &amp; Validated TCRPM (Activity Based TDM) for Turnpike</li>
-            <li>Led the development of system-wide carbon reduction strategies for St. Lucie by programming tools and performed over 30 travel demand model runs to envision high-density and mixed-use scenarios. By redistributing socioeconomic data &amp; quantifying the reduction in VMT/VHT through TCRPM model outputs</li>
-            <li>Sketched conceptual designs, and programmed user experience of LEE County MPO dashboard for calculating statistics and visualizing congestion of major roadways. Used data.table, leafgl and shiny package(R) to speed up querying, filtering and visualizing data by 60% on leaflet maps.</li>
+            <li>Developed new TAZ geography, disaggregated socio-economic data using ACS-2021 estimates, updated traffic counts and transit lines for TCRPM v6. Expanded &amp; Validated TCRPM (Activity Based TDM) for Turnpike.</li>
+            <li>Led the development of system-wide carbon reduction strategies for St. Lucie by programming tools and performed over 30 travel demand model runs to envision high-density and mixed-use scenarios. By redistributing socioeconomic data &amp; quantifying the reduction in VMT/VHT through TCRPM model outputs.</li>
             <li>Cleaned, Analyzed and Visualized various datasets like US Census (ACS 5-year Estimates), HERE, Streetlight (for origin destination matrix estimation procedure), CTPP, and extracted trip-making patterns from Big Data Sources like INRIX (22 GB) and used Google Maps API (directions) to develop SERPM 9 External Model.</li>
           </ul>
         </div>
@@ -273,9 +281,9 @@
           <div class="job-company">Lochmueller Group</div>
           <div class="job-meta">August 2018 – June 2020 / Champaign, IL</div>
           <ul>
-            <li>Analyzed 1.8 billion data points to calculate various performance measures for 16 alternatives proposed in Mid-State Corridor Project</li>
-            <li>Cleaned, Analysed and Updated 40-year demographic, employment and land use data using ACS 5-year estimates for TDM with detailed documentation using R, reduced total man hours dedicated on project by approx. 50%</li>
-            <li>Updated TAZ geography and consolidated demographic, socioeconomic, and network data for the Illinois Statewide Travel Demand Model</li>
+            <li>Analyzed 1.8 billion data points to calculate various performance measures for 16 alternatives proposed in Mid-State Corridor Project.</li>
+            <li>Cleaned, Analysed and Updated 40-year demographic, employment and land use data using ACS 5-year estimates for TDM with detailed documentation using R, reduced total man hours dedicated on project by approx. 50%.</li>
+            <li>Updated TAZ geography and consolidated demographic, socioeconomic, and network data for the Illinois Statewide Travel Demand Model.</li>
           </ul>
         </div>
 
